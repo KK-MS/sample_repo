@@ -1,25 +1,29 @@
 ## S&F Folder Structure
 Here is an example how to structure the repositories.
 ```
-cromaps
+application
 └─── README.md
 |
 │   Goal: Algorithm is independent. Can be tested in different scenarios regressively.
 └─── app/ (Application folder. Where the necessary libaries, exe, guide.md will be present.)
 │    └─── README.md
 |    |
-│    └─── standalong/ (recomend: GUI communication with algorithm and not hard function call! console, GUI based .exe )
+│    └─── standalone/ (recomend: GUI communication with algorithm and not hard function call! console, GUI based .exe )
 │    |    └─── README.md
 │    |    └─── ...
 |    |
 │    └─── network/ (browser based, i.e. UI/user interface/GUI is seperated from algorithm. It provides communication protocol.)
-│         └─── README.md
-│         └─── ...
+|    |    └─── README.md
+|    |    └─── ...
+|    |
+│    └─── demodata/ (it is for demonstration)
+|         └─── README.md
+|         └─── ...
 |
 └─── code/ (Contains the developed code)
 │    └─── README.md
 |    |
-│    └─── modules/
+│    └─── modules/ (core algorithm of an application)
 │    |    └─── README.md
 │    |    |
 │    |    └─── moduleA/
@@ -30,18 +34,7 @@ cromaps
 │    |         └─── README.md
 │    |         └─── ...
 │    |      
-│    └─── views/
-│         └─── README.md
-│         └─── ...
-│
-└─── data/ (Static data: less 20 MB in github, else link to LRZ. Recommend: To have data repo e..g LRZ, X-Driver)
-│    └─── README.md
-|    |
-│    └─── ego/
-│    |    └─── README.md
-│    │    └─── ...
-│    │   
-│    └─── cro/
+│    └─── views/ (console / GUI)
 │         └─── README.md
 │         └─── ...
 |
@@ -97,7 +90,7 @@ cromaps
      │    └─── README.md
      │    └─── ...
      │   
-     └─── data/
+     └─── data/ (Static data: less 20 MB in github, else link to LRZ. Recommend: To have data repo e..g LRZ, X-Driver)
           └─── README.md
           └─── ...
 ```

@@ -1,5 +1,7 @@
 # Documents
 
+Documents (docs) consists of various document related to the application.
+
 ## Administrator
 
 Administrative documents. E.g. minutes of meetings, invoices, etc.
